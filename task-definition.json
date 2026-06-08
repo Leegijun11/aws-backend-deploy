@@ -15,10 +15,13 @@
             ],
             "essential": true,
             "environment": [
-                {
-                    "name": "DATABASE_URL",
-                    "value": "mysql://admin:dlrlwns11@study-backend-db.c3mmm40eorg5.ap-northeast-2.rds.amazonaws.com:3306/studydb"
-                }
+                            { "name": "DB_USER", "value": "admin" },
+                            { "name": "DB_PASSWORD", "value": "dlrlwns11" },
+                            { "name": "DB_HOST", "value": "study-backend-db.c3mmm40eorg5.ap-northeast-2.rds.amazonaws.com" },
+                            { "name": "DB_PORT", "value": "3306" },
+                            { "name": "DB_NAME", "value": "studydb" },
+                            { "name": "SECRET_KEY", "value": "gijun_secret_key_any_long_string_12345" },
+                            { "name": "JWT_ALGORITHM", "value": "HS256" }
             ],
             "environmentFiles": [],
             "mountPoints": [],
