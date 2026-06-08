@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "study-back-con",
-            "image": "036230293765.dkr.ecr.ap-northeast-2.amazonaws.com/my-backend",
+            "image": "036230293765.dkr.ecr.ap-northeast-2.amazonaws.com/my-backend:latest",
             "cpu": 0,
             "portMappings": [
                 {
