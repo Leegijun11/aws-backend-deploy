@@ -23,7 +23,8 @@ app = FastAPI(lifespan=lifespan)
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https:https://d1vdz1ra11di34.cloudfront.net"
+    "https://d1vdz1ra11di34.cloudfront.net",
+   "http://d1vdz1ra11di34.cloudfront.net"
 ]
 
 app.add_middleware(
