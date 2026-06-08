@@ -49,6 +49,5 @@
     ],
     "cpu": "512",
     "memory": "1024",
-    "enableFaultInjection": false,
     "tags": []
 }
