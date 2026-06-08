@@ -1,3 +1,0 @@
-export const CONSTANTS_CONFIG = {
-    SEED_MONEY : 50000000
-}

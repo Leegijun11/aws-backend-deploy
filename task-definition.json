@@ -1,0 +1,54 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "study-back-con",
+            "image": "036230293765.dkr.ecr.ap-northeast-2.amazonaws.com/my-backend",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp",
+                    "name": "study-back-con-8000-tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                    "name": "DATABASE_URL",
+                    "value": "mysql://admin:dlrlwns11@study-backend-db.c3mmm40eorg5.ap-northeast-2.rds.amazonaws.com:3306/studydb"
+                }
+            ],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/study-back-td",
+                    "awslogs-region": "ap-northeast-2",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            },
+            "systemControls": []
+        }
+    ],
+    "family": "study-back-td",
+    "executionRoleArn": "arn:aws:iam::036230293765:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "placementConstraints": [],
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
+    "enableFaultInjection": false,
+    "tags": []
+}
