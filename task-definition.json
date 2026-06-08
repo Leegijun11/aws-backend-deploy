@@ -16,7 +16,7 @@
             "essential": true,
             "environment": [
                             { "name": "DB_USER", "value": "admin" },
-                            { "name": "DB_PASSWORD", "value": "dlrlwns11" },
+                            { "name": "DB_PASSWORD", "value": "studypass123!" },
                             { "name": "DB_HOST", "value": "study-backend-db.c3mmm40eorg5.ap-northeast-2.rds.amazonaws.com" },
                             { "name": "DB_PORT", "value": "3306" },
                             { "name": "DB_NAME", "value": "studydb" },
