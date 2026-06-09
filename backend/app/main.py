@@ -24,7 +24,12 @@ origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://d1vdz1ra11di34.cloudfront.net",
-   "http://d1vdz1ra11di34.cloudfront.net"
+    "http://d1vdz1ra11di34.cloudfront.net",
+    
+    "https://web-craft.shop",
+    "http://web-craft.shop",
+    "https://www.web-craft.shop",
+    "http://www.web-craft.shop"
 ]
 
 app.add_middleware(
